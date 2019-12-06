@@ -6,6 +6,7 @@ using System.Linq;
 
 namespace EncryptStringSample
 {//AES-256-CBC
+    //https://stackoverflow.com/questions/10168240/encrypting-decrypting-a-string-in-c-sharp
     public static class StringCipher
     {
         // This constant is used to determine the keysize of the encryption algorithm in bits.
