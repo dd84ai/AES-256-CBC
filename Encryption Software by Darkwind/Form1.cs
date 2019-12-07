@@ -30,7 +30,8 @@ namespace Encryption_Software_by_Darkwind
             }
             catch (Exception error)
             {
-                MessageBox.Show(error.Message);
+                richTextBox2_Encrypted.Text = "*I could not encrypt the message*";
+                MessageBox.Show(error.Message, "Error.");
             }
         }
 
@@ -45,7 +46,8 @@ namespace Encryption_Software_by_Darkwind
             }
             catch (Exception error)
             {
-                MessageBox.Show(error.Message);
+                richTextBox1_Decrypted.Text = "*I could not decrypt the message*";
+                MessageBox.Show(error.Message, "Error: Possibly wrong crypted message or key.");
             }
         }
 

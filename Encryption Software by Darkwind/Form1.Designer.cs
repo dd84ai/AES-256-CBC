@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1_Encrypt = new System.Windows.Forms.Button();
             this.button2_Decrypt = new System.Windows.Forms.Button();
             this.button3_Generate_Key = new System.Windows.Forms.Button();
@@ -168,6 +169,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackgroundImage = global::Encryption_Software_by_Darkwind.Properties.Resources.star_space_tile;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.textBox1_Key);
@@ -175,6 +177,7 @@
             this.Controls.Add(this.button3_Generate_Key);
             this.Controls.Add(this.button2_Decrypt);
             this.Controls.Add(this.button1_Encrypt);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Encryption Software by Darkwind";
             this.splitContainer1.Panel1.ResumeLayout(false);
