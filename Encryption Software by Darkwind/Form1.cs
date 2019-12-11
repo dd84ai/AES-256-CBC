@@ -16,14 +16,14 @@ namespace Encryption_Software_by_Darkwind
         public Form1()
         {
             InitializeComponent();
-            button3_press();
+            //button3_press();
         }
 
         private void button1_Encrypt_Click(object sender, EventArgs e)
         {
             try
             {
-                string password = textBox1_Key.Text;
+                string password = textBox1_Key.Text.Replace(" ", "");
                 string plaintext = richTextBox1_Decrypted.Text;
                 string encryptedstring = StringCipher.Encrypt(plaintext, password);
                 richTextBox2_Encrypted.Text = encryptedstring;
@@ -39,8 +39,8 @@ namespace Encryption_Software_by_Darkwind
         {
             try
             {
-                string password = textBox1_Key.Text;
-            string encryptedstring = richTextBox2_Encrypted.Text;
+                string password = textBox1_Key.Text.Replace(" ","");
+            string encryptedstring = richTextBox2_Encrypted.Text.Replace(" ", "");
             string decryptedstring = StringCipher.Decrypt(encryptedstring, password);
             richTextBox1_Decrypted.Text = decryptedstring;
             }

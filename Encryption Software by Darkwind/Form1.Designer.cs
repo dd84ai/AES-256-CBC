@@ -97,7 +97,7 @@
             this.textBox1_Key.Name = "textBox1_Key";
             this.textBox1_Key.Size = new System.Drawing.Size(772, 20);
             this.textBox1_Key.TabIndex = 4;
-            this.textBox1_Key.Text = "abracadabra";
+            this.textBox1_Key.Text = "KeyToDecrypt";
             // 
             // richTextBox1_Decrypted
             // 
@@ -108,7 +108,7 @@
             this.richTextBox1_Decrypted.Name = "richTextBox1_Decrypted";
             this.richTextBox1_Decrypted.Size = new System.Drawing.Size(370, 316);
             this.richTextBox1_Decrypted.TabIndex = 5;
-            this.richTextBox1_Decrypted.Text = "Abracadabra";
+            this.richTextBox1_Decrypted.Text = "Insert text to encrypt here";
             // 
             // label2
             // 
@@ -141,7 +141,7 @@
             this.richTextBox2_Encrypted.Name = "richTextBox2_Encrypted";
             this.richTextBox2_Encrypted.Size = new System.Drawing.Size(383, 316);
             this.richTextBox2_Encrypted.TabIndex = 8;
-            this.richTextBox2_Encrypted.Text = "";
+            this.richTextBox2_Encrypted.Text = "Insert text to decrypt here";
             // 
             // splitContainer1
             // 
@@ -179,7 +179,7 @@
             this.Controls.Add(this.button1_Encrypt);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Encryption Software by Darkwind";
+            this.Text = "Encryption Software by Darkwind (1.2)";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
