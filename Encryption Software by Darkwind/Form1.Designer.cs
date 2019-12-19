@@ -179,7 +179,7 @@
             this.Controls.Add(this.button1_Encrypt);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Encryption Software by Darkwind (1.2)";
+            this.Text = "Encryption Software by Darkwind (1.3)";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);

@@ -26,6 +26,7 @@ namespace Encryption_Software_by_Darkwind
                 string password = textBox1_Key.Text.Replace(" ", "");
                 string plaintext = richTextBox1_Decrypted.Text;
                 string encryptedstring = StringCipher.Encrypt(plaintext, password);
+                CheckSum.Secure(password + " | " + encryptedstring);
                 richTextBox2_Encrypted.Text = encryptedstring;
             }
             catch (Exception error)
