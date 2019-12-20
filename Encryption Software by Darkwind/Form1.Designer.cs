@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.richTextBox2_Encrypted = new System.Windows.Forms.RichTextBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -164,6 +165,17 @@
             this.splitContainer1.SplitterDistance = 377;
             this.splitContainer1.TabIndex = 9;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(426, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(132, 29);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Instruction";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,6 +183,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = global::Encryption_Software_by_Darkwind.Properties.Resources.star_space_tile;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.textBox1_Key);
             this.Controls.Add(this.label1);
@@ -179,7 +192,7 @@
             this.Controls.Add(this.button1_Encrypt);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Encryption Software by Darkwind (1.3)";
+            this.Text = "Encryption Software by Darkwind (1.4)";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -203,6 +216,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RichTextBox richTextBox2_Encrypted;
         private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

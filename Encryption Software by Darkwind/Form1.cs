@@ -74,5 +74,12 @@ namespace Encryption_Software_by_Darkwind
         {
             button3_press();
         }
+
+        //Instruction button
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Instruction Window = new Instruction();
+            Window.Show();
+        }
     }
 }
