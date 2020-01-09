@@ -26,7 +26,7 @@ namespace Encryption_Software_by_Darkwind
                 string password = textBox1_Key.Text.Replace(" ", "");
                 string plaintext = richTextBox1_Decrypted.Text;
                 string encryptedstring = StringCipher.Encrypt(plaintext, password);
-                CheckSum.Secure(password + " | " + encryptedstring);
+                CheckSum.Secure(password, encryptedstring);
                 richTextBox2_Encrypted.Text = encryptedstring;
             }
             catch (Exception error)
@@ -35,11 +35,16 @@ namespace Encryption_Software_by_Darkwind
                 MessageBox.Show(error.Message, "Error.");
             }
         }
-
+        DateTime lasttimeuseddecryptor = DateTime.Now.AddSeconds(-10);
+        int QuantityOfErrorsInARow = 0;
         private void button2_Decrypt_Click(object sender, EventArgs e)
         {
             try
             {
+                DateTime now = DateTime.Now;
+                if ((now - lasttimeuseddecryptor).TotalSeconds < QuantityOfErrorsInARow * 1) throw new SystemException("Your central processing unit is overheated. Cooldown for "+ QuantityOfErrorsInARow + " seconds.");
+                else lasttimeuseddecryptor = DateTime.Now;
+                QuantityOfErrorsInARow = 0;
                 string password = textBox1_Key.Text.Replace(" ","");
             string encryptedstring = richTextBox2_Encrypted.Text.Replace(" ", "");
             string decryptedstring = StringCipher.Decrypt(encryptedstring, password);
@@ -47,6 +52,7 @@ namespace Encryption_Software_by_Darkwind
             }
             catch (Exception error)
             {
+                QuantityOfErrorsInARow++;
                 richTextBox1_Decrypted.Text = "*I could not decrypt the message*";
                 MessageBox.Show(error.Message, "Error: Possibly wrong crypted message or key.");
             }
