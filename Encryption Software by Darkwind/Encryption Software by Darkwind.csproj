@@ -7,7 +7,7 @@
     <ProjectGuid>{27D2D318-AF67-4718-9788-678EF5D42798}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Encryption_Software_by_Darkwind</RootNamespace>
-    <AssemblyName>LPI Encryption Software %281.5%29</AssemblyName>
+    <AssemblyName>Dark Encrypting Software %281.6%29</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
